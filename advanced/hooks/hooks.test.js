@@ -15,6 +15,15 @@ beforeEach(() => {
 	console.log('beforeEach');
 });
 
+afterEach(() => {
+	// user = new User(testEmail);
+	console.log('afterEach');
+});
+
+afterAll(() => {
+	console.log('afterAll');
+});
+
 it('should update the email', () => {
 	const newTestEmail = 'test2@test.com';
 	user.updateEmail(newTestEmail);

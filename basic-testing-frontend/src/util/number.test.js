@@ -37,7 +37,8 @@ describe('cleanNumber()', () => {
 
 		const result = cleanNumber(numberValues);
 
-		expect(result);
+		// expect(result).toBeTypeOf('number');
+		expect(result).toEqual([1, 2]);
 	});
 
 	it('should throw an error if an array with at least one empty string is provided', () => {
